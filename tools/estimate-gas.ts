@@ -46,9 +46,6 @@ const estimate = (contractNumber: number) => {
         midBound = lowerBound + (higherBound - lowerBound) / 2;
       }
     } else {
-      if (lowerBound == higherBound) {
-        process.exit(1);
-      }
       if (higherBound >= MAX_GAS) {
         return {
           iterations,
