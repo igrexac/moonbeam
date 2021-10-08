@@ -61,7 +61,7 @@ const estimate = (contractNumber: number) => {
       return {
         iterations,
         gas: higherBound,
-        result,
+        result: "ok",
       };
     }
   }
